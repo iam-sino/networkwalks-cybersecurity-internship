@@ -783,6 +783,18 @@ I also reviewed the available MAC address information and generated a network to
 
 
 
+## Project Documentation
+
+The following documents contain the project report and permission documentation.
+
+# W2-PM-FINAL Report 
+- [View Project Report](./W2-PM-FINAL%20-%20Report%20v2.docx.pdf)
+
+
+# W2-PM-Permission Letter
+- [View Permission Letter](./W2-PM-%20Permission%20Letter%20v1%20(1).pdf)
+
+
 
 👤 Author
 Sunday Ode Abi
