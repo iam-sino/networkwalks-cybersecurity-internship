@@ -146,7 +146,7 @@ I reviewed the information collected from each tool and considered its potential
 
 The following tools were used during the practical exercise.
 
-5.1 WHOIS
+## 5.1 WHOIS
 
 Purpose: Domain registration information gathering.
 
@@ -165,6 +165,12 @@ Why it matters in cybersecurity:
 An attacker may use domain registration information to understand who manages a domain and identify aspects of its internet infrastructure.
 
 A security professional can also use this information to establish an initial picture of the domain's ownership and DNS arrangements.
+
+![WHOIS Result 1](./Whois%20Result%201.png)
+
+![WHOIS Result 2](./Whois%20Result%202.png)
+
+![WHOIS Result 3](./Whois%20Result%203.png)
 
 5.2 WhatWeb
 
