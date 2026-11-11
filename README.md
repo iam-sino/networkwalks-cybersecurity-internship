@@ -778,3 +778,17 @@ The results can help security professionals identify active hosts, maintain netw
 This exercise gave me practical experience using Zenmap for network discovery and host identification. I successfully scanned the 192.168.56.0/24 subnet and identified three live hosts.
 
 I also reviewed the available MAC address information and generated a network topology to visualise the discovered devices.
+
+
+
+
+
+
+👤 Author
+Sunday Ode Abi
+Cybersecurity Professional B084
+LinkedIn: https://www.linkedin.com/in/sunday-ode-5a47573b3
+
+📌 Project Information
+Program Name: Cybersecurity Internship at Networkwalks | Week: 02 | Repository: GitHub
+
