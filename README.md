@@ -295,7 +295,11 @@ From an attacker's perspective, identifying name servers and registration-relate
 However, the presence of publicly available WHOIS information is not itself a vulnerability.
 
 
+
+
 WHOIS command: whois networkwalks.com
+
+
 
 
 ![WHOIS Result 1](./Whois%20Result%201.png)
@@ -338,7 +342,10 @@ However, identifying a software version does not prove that the software is vuln
 Further authorised testing and version verification would be required.
 
 
+
 WhatWeb command: whatweb networkwalks.com
+
+
 
 ![WhatWeb Results](./whatweb%20Result.png)
 
@@ -372,9 +379,13 @@ An attacker may use this information as part of broader infrastructure reconnais
 Security professionals can use the same information to understand their external exposure and identify the systems associated with their organisation.
 
 
+
 Nslookup command: nslookup networkwalks.com
 
+
 ![Nslookup Results](./nslookup%20Result.png)
+
+
 
 
 ## 6.4 HTTP Response Header Inspection Using cURL
@@ -416,9 +427,13 @@ However, the existence of a REST API endpoint does not automatically indicate a 
 The endpoint would require further authorised assessment to determine whether access controls and information exposure are appropriately configured.
 
 
+
 cURL command: curl -I https://networkwalks.com
 
+
 ![cURL Results](./curl%20Result.png)
+
+
 
 
 
@@ -458,9 +473,13 @@ From a defensive perspective, identifying the WAF is useful, but it does not con
 The effectiveness of a WAF depends on its configuration, rules, updates and overall security management.
 
 
+
 WAFW00F command: wafw00f networkwalks.com
 
+
 ![WAFW00F Results](./wafw00f%20Result.png)
+
+
 
 
 ## 6.6 DNS Enumeration Using DNSRecon
@@ -510,24 +529,31 @@ From a defensive perspective, organisations should review their DNS records regu
 The absence of an SRV record in this scan does not establish that the organisation has no other services. Similarly, receiving no answer to a DNSSEC query is not sufficient by itself to conclude that DNSSEC is disabled.
 
 
+
 DNSRecon Commad:  dnsrecon -d networkwalks.com
+
+
 
 ![DNSRecon Results](./dnsrecon%20Result.png)
 
 
-7. Consolidated Findings
+
+
+# 7. Consolidated Findings
 
 The following table summarises the major findings from the six reconnaissance activities.
 
-Tool| Main Finding| Security Relevance
-WHOIS| GoDaddy.com, LLC registrar and identified name servers| Provides domain registration and infrastructure information
-WhatWeb| Apache, WordPress 7.1.4, WP Download Manager 3.3.76, Bootstrap and jQuery| Reveals identifiable web technologies
-Nslookup| 192.232.216.135| Identifies the resolved IP address
-cURL| HTTP/2 200 and "/wp-json/" endpoint| Reveals response and application information
-WAFW00F| ModSecurity (SpiderLabs)| Identifies reported WAF technology
-DNSRecon| SOA, NS, MX, A and TXT information| Provides insight into DNS infrastructure
+|Tool| Main Finding| Security Relevance|
+|---|---|
+|WHOIS| GoDaddy.com, LLC registrar and identified name servers| Provides domain registration and infrastructure information|
+|WhatWeb| Apache, WordPress 7.1.4, WP Download Manager 3.3.76, Bootstrap and jQuery| Reveals identifiable web technologies|
+|Nslookup| 192.232.216.135| Identifies the resolved IP address|
+|cURL| HTTP/2 200 and "/wp-json/" endpoint| Reveals response and application information|
+|WAFW00F| ModSecurity (SpiderLabs)| Identifies reported WAF technology|
+|DNSRecon| SOA, NS, MX, A and TXT information| Provides insight into DNS infrastructure|
 
-8. Risk Analysis and Potential Security Impact
+
+# 8. Risk Analysis and Potential Security Impact
 
 Based on the information collected during the reconnaissance activities, I identified several potential security considerations.
 
