@@ -460,7 +460,7 @@ The effectiveness of a WAF depends on its configuration, rules, updates and over
 
 WAFW00F command: wafw00f networkwalks.com
 
-![WAFW00F Results](./wafw00f-result.png)
+![WAFW00F Results](./wafw00f%20Result.png)
 
 
 ## 6.6 DNS Enumeration Using DNSRecon
