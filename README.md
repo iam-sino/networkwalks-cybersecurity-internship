@@ -109,10 +109,8 @@ The following areas were examined:
 | WAF identification | Identify the reported Web Application Firewall |
 | DNS enumeration | Examine available DNS records |
 
-## 4.2 Methodology
 
-I followed a structured reconnaissance methodology.
-4.2 Methodology
+## 4.2 Methodology
 
 I followed a structured reconnaissance methodology.
 
@@ -144,7 +142,7 @@ Step 7: Result Analysis
 
 I reviewed the information collected from each tool and considered its potential security implications.
 
-5. Tools and Technologies Used
+# 5. Tools and Technologies Used
 
 The following tools were used during the practical exercise.
 
