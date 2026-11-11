@@ -264,9 +264,9 @@ DNS records can reveal information about domain infrastructure, mail services, n
 
 This information can help security professionals understand the organisation's external infrastructure and identify areas that may require further review.
 
-6. Practical Implementation and Findings
+## 6. Practical Implementation and Findings
 
-6.1 Domain Registration Information Gathering Using WHOIS
+# 6.1 Domain Registration Information Gathering Using WHOIS
 
 I started the reconnaissance exercise by using WHOIS to obtain publicly available registration information about networkwalks.com.
 
@@ -294,9 +294,19 @@ From an attacker's perspective, identifying name servers and registration-relate
 
 However, the presence of publicly available WHOIS information is not itself a vulnerability.
 
-Evidence: Insert WHOIS command and result screenshot here.
 
-6.2 Website Technology Identification Using WhatWeb
+WHOIS command: whois networkwalks.com
+
+
+![WHOIS Result 1](./Whois%20Result%201.png)
+
+![WHOIS Result 2](./Whois%20Result%202.png)
+
+![WHOIS Result 3](./Whois%20Result%203.png)
+
+
+
+# 6.2 Website Technology Identification Using WhatWeb
 
 After gathering domain registration information, I used WhatWeb to identify the technologies running on networkwalks.com.
 
@@ -327,9 +337,13 @@ However, identifying a software version does not prove that the software is vuln
 
 Further authorised testing and version verification would be required.
 
-Evidence: Insert WhatWeb command and result screenshot here.
 
-6.3 DNS Resolution Using Nslookup
+WhatWeb command: whatweb networkwalks.com
+
+![WhatWeb Results](./whatweb%20Result.png)
+
+
+# 6.3 DNS Resolution Using Nslookup
 
 I then used Nslookup to resolve networkwalks.com into its corresponding IP address.
 
@@ -357,9 +371,13 @@ An attacker may use this information as part of broader infrastructure reconnais
 
 Security professionals can use the same information to understand their external exposure and identify the systems associated with their organisation.
 
-Evidence: Insert Nslookup command and result screenshot here.
 
-6.4 HTTP Response Header Inspection Using cURL
+Nslookup command: nslookup networkwalks.com
+
+![Nslookup Results](./nslookup%20Result.png)
+
+
+# 6.4 HTTP Response Header Inspection Using cURL
 
 The next activity involved using cURL to inspect the HTTP response headers returned by the website.
 
@@ -397,9 +415,14 @@ However, the existence of a REST API endpoint does not automatically indicate a 
 
 The endpoint would require further authorised assessment to determine whether access controls and information exposure are appropriately configured.
 
-Evidence: Insert cURL command and response screenshot here.
 
-6.5 Web Application Firewall Identification Using WAFW00F
+cURL command: curl -I https://networkwalks.com
+
+![cURL Results](./curl%20Result.png)
+
+
+
+# 6.5 Web Application Firewall Identification Using WAFW00F
 
 I used WAFW00F to determine whether a Web Application Firewall was identifiable on networkwalks.com.
 
@@ -434,9 +457,13 @@ From a defensive perspective, identifying the WAF is useful, but it does not con
 
 The effectiveness of a WAF depends on its configuration, rules, updates and overall security management.
 
-Evidence: Insert WAFW00F command and result screenshot here.
 
-6.6 DNS Enumeration Using DNSRecon
+WAFW00F command: wafw00f networkwalks.com
+
+![WAFW00F Results](./wafw00f-result.png)
+
+
+# 6.6 DNS Enumeration Using DNSRecon
 
 Finally, I used DNSRecon to enumerate the DNS records associated with networkwalks.com.
 
@@ -483,31 +510,7 @@ From a defensive perspective, organisations should review their DNS records regu
 The absence of an SRV record in this scan does not establish that the organisation has no other services. Similarly, receiving no answer to a DNSSEC query is not sufficient by itself to conclude that DNSSEC is disabled.
 
 
-Commad: $ whois networkwalks.com
-
-![WHOIS Result 1](./Whois%20Result%201.png)
-
-![WHOIS Result 2](./Whois%20Result%202.png)
-
-![WHOIS Result 3](./Whois%20Result%203.png)
-
-Commad: $ whatweb networkwalks.com
-
-![WhatWeb Results](./whatweb%20Result.png)
-
-Commad: $ nslookup networkwalks.com
-
-![Nslookup Results](./nslookup%20Result.png)
-
-Commad: $ curl -I https://networkwalks.com
-
-![cURL Results](./curl%20Result.png)
-
-Commad: $ wafw00f networkwalks.com
-
-![WAFW00F Results](./wafw00F%20Result.png)
-
-Commad: $ dnsrecon -d networkwalks.com
+DNSRecon Commad:  dnsrecon -d networkwalks.com
 
 ![DNSRecon Results](./dnsrecon%20Result.png)
 
