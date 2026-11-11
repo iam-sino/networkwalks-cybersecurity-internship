@@ -13,6 +13,7 @@ Tools Used: WHOIS, WhatWeb, Nslookup, cURL, WAFW00F, DNSRecon
 Project Category: Cybersecurity | Network Security | Information Gathering | Ethical Hacking
 
 
+
 # 1. Project Overview
 
 The exercise focused on understanding how publicly available information about a domain and its web infrastructure can be collected using different reconnaissance tools available in Kali Linux.
