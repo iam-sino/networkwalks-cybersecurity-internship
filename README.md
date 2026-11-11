@@ -3,22 +3,14 @@ Documentation of my cybersecurity internship practical exercises, including netw
 
 ## **Footprinting & Reconnaissance**
 
-Networkwalks Cybersecurity Internship – Week 2
 
-Footprinting and Reconnaissance: Web Application and Domain Information Gathering
-
-Project: Networkwalks Cybersecurity Internship – Week 2
-Module: W2-PM1 – Footprinting and Reconnaissance
 Target Domain: networkwalks.com
 Operating System: Kali Linux
 Tools Used: WHOIS, WhatWeb, Nslookup, cURL, WAFW00F, DNSRecon
 Project Category: Cybersecurity | Network Security | Information Gathering | Ethical Hacking
 
----
 
-1. Project Overview
-
-This project documents a practical footprinting and reconnaissance exercise carried out as part of my Week 2 cybersecurity internship at Networkwalks.
+# 1. Project Overview
 
 The exercise focused on understanding how publicly available information about a domain and its web infrastructure can be collected using different reconnaissance tools available in Kali Linux.
 
@@ -39,7 +31,7 @@ The practical activities covered:
 
 The objective was not to exploit the target or gain unauthorised access. Rather, the exercise focused on learning how security professionals gather, interpret and document information during the initial stages of an authorised security assessment.
 
-2. Project Objectives
+# 2. Project Objectives
 
 The main objectives of this exercise were to:
 
@@ -54,7 +46,7 @@ The main objectives of this exercise were to:
 9. Understand how information gathered during reconnaissance can assist an attacker in profiling a target.
 10. Develop the ability to document technical findings in a structured security assessment report.
 
-3. Understanding Footprinting and Reconnaissance
+# 3. Understanding Footprinting and Reconnaissance
 
 Footprinting is the process of collecting information about a target organisation, domain, network or system.
 
@@ -62,7 +54,7 @@ It helps security professionals understand what information is publicly accessib
 
 Reconnaissance is commonly divided into two categories:
 
-3.1 Passive Reconnaissance
+# 3.1 Passive Reconnaissance
 
 Passive reconnaissance involves gathering information without directly interacting with the target's systems in a way that generates active scanning traffic.
 
