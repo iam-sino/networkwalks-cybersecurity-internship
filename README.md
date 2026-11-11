@@ -483,7 +483,7 @@ From a defensive perspective, organisations should review their DNS records regu
 The absence of an SRV record in this scan does not establish that the organisation has no other services. Similarly, receiving no answer to a DNSSEC query is not sufficient by itself to conclude that DNSSEC is disabled.
 
 
-$ whois networkwalks.com
+Commad: $ whois networkwalks.com
 
 ![WHOIS Result 1](./Whois%20Result%201.png)
 
@@ -491,23 +491,23 @@ $ whois networkwalks.com
 
 ![WHOIS Result 3](./Whois%20Result%203.png)
 
-$ whatweb networkwalks.com
+Commad: $ whatweb networkwalks.com
 
 ![WhatWeb Results](./whatweb%20Result.png)
 
-$ nslookup networkwalks.com
+Commad: $ nslookup networkwalks.com
 
 ![Nslookup Results](./nslookup%20Result.png)
 
-$ curl -I https://networkwalks.com
+Commad: $ curl -I https://networkwalks.com
 
 ![cURL Results](./curl%20Result.png)
 
-$ wafw00f networkwalks.com
+Commad: $ wafw00f networkwalks.com
 
 ![WAFW00F Results](./wafw00F%20Result.png)
 
-$ dnsrecon -d networkwalks.com
+Commad: $ dnsrecon -d networkwalks.com
 
 ![DNSRecon Results](./dnsrecon%20Result.png)
 
