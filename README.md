@@ -5,8 +5,11 @@ Documentation of my cybersecurity internship practical exercises, including netw
 
 
 Target Domain: networkwalks.com
+
 Operating System: Kali Linux
+
 Tools Used: WHOIS, WhatWeb, Nslookup, cURL, WAFW00F, DNSRecon
+
 Project Category: Cybersecurity | Network Security | Information Gathering | Ethical Hacking
 
 
@@ -65,7 +68,7 @@ Examples include:
 - Researching publicly available information about an organisation.
 - Reviewing information available through search engines.
 
-3.2 Active Reconnaissance
+# 3.2 Active Reconnaissance
 
 Active reconnaissance involves directly interacting with a target system or service to collect additional information.
 
@@ -81,27 +84,31 @@ In this practical, I used different reconnaissance utilities to examine the publ
 
 Understanding the distinction between passive and active reconnaissance is important because the techniques used can generate different levels of interaction with the target infrastructure.
 
-4. Scope and Methodology
+# 4. Scope and Methodology
 
-4.1 Scope of Assessment
+# 4.1 Scope of Assessment
 
-The assessment focused on the following domain:
 
-Target: networkwalks.com
-
-The activities were limited to information gathering and reconnaissance.
-
-The following areas were examined:
-
-Assessment Area| Purpose
-Domain registration| Identify registrar and registration-related information
-Name servers| Identify DNS hosting infrastructure
-Web technologies| Identify technologies used by the website
-IP resolution| Determine the IP address associated with the domain
-HTTP headers| Examine server responses and exposed information
-WAF identification| Identify the reported Web Application Firewall
-DNS enumeration| Examine available DNS records
-
+> [!NOTE]
+> **4.1 Scope of Assessment**
+>
+> The assessment focused on the following domain:
+>
+> **Target:** networkwalks.com
+>
+> The activities were limited to information gathering and reconnaissance.
+>
+> The following areas were examined:
+>
+> | Assessment Area | Purpose |
+> |---|---|
+> | Domain registration | Identify registrar and registration-related information |
+> | Name servers | Identify DNS hosting infrastructure |
+> | Web technologies | Identify technologies used by the website |
+> | IP resolution | Determine the IP address associated with the domain |
+> | HTTP headers | Examine server responses and exposed information |
+> | WAF identification | Identify the reported Web Application Firewall |
+> | DNS enumeration | Examine available DNS records |
 4.2 Methodology
 
 I followed a structured reconnaissance methodology.
