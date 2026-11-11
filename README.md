@@ -89,7 +89,6 @@ Understanding the distinction between passive and active reconnaissance is impor
 # 4.1 Scope of Assessment
 
 
-> [!NOTE]
 > **4.1 Scope of Assessment**
 >
 > The assessment focused on the following domain:
