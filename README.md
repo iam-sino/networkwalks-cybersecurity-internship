@@ -803,12 +803,10 @@ The following documents contain the project report and permission documentation.
 
 Sunday Ode Abi
 
-Cybersecurity Professional B084
-
 LinkedIn: https://www.linkedin.com/in/sunday-ode-5a47573b3
 
 
 📌 Project Information
 
-Program Name: Cybersecurity Internship at Networkwalks | Week: 02 | Repository: GitHub
+Program Name: Cybersecurity Internship at Networkwalks B084 | Week: 02 | Repository: GitHub
 
