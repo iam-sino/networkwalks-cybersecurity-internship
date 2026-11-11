@@ -1,7 +1,8 @@
-# networkwalks-cybersecurity-internship-W2
+# networkwalks-B084-cybersecurity-internship-W2
 Documentation of my cybersecurity internship practical exercises, including network footprinting, reconnaissance, network scanning, security analysis and hands-on lab activities.
 
-*Footprinting & Reconnaissance
+## Footprinting & Reconnaissance
+
 I performed reconnaissance against the networkwalks.com domain using six Kali Linux tools: WHOIS, WhatWeb, Nslookup, cURL, WAFW00F, and DNSRecon. Each tool was used to gather a different type of information about the target domain and its web infrastructure.
 
 First, I used WHOIS to obtain publicly available domain registration information. The results identified GoDaddy.com, LLC as the domain registrar and showed that the registrant information was protected by a privacy service, Domains By Proxy, LLC. The results also revealed the domain's name servers, including NS6135.HOSTGATOR.COM, NS6136.HOSTGATOR.COM, and NS29.DOMAINCONTROL.COM.
@@ -18,7 +19,8 @@ Finally, I used DNSRecon to enumerate the domain's DNS records. The results reve
 
 These activities helped me understand how different reconnaissance tools can be used to collect publicly available information about a domain, identify its underlying technologies, and examine aspects of its DNS and web infrastructure.
 
-*Network Scanning with Zenmap
+# Network Scanning with Zenmap
+
 For the second activity, I used Zenmap to perform network discovery on my local network. The practical required me to identify my local IP address and subnet, discover live hosts, identify their IP and MAC addresses, and generate a network topology.
 I first used the Windows "ipconfig" command to identify my local IP address and LAN subnet. I then entered the subnet into Zenmap and selected Ping Scan to identify active hosts.
 The scan was performed against the 192.168.56.0/24 subnet. The results identified three live hosts:
