@@ -89,25 +89,29 @@ Understanding the distinction between passive and active reconnaissance is impor
 # 4.1 Scope of Assessment
 
 
-> **4.1 Scope of Assessment**
->
-> The assessment focused on the following domain:
->
-> **Target:** networkwalks.com
->
-> The activities were limited to information gathering and reconnaissance.
->
-> The following areas were examined:
->
-> | Assessment Area | Purpose |
-> |---|---|
-> | Domain registration | Identify registrar and registration-related information |
-> | Name servers | Identify DNS hosting infrastructure |
-> | Web technologies | Identify technologies used by the website |
-> | IP resolution | Determine the IP address associated with the domain |
-> | HTTP headers | Examine server responses and exposed information |
-> | WAF identification | Identify the reported Web Application Firewall |
-> | DNS enumeration | Examine available DNS records |
+## 4.1 Scope of Assessment
+
+The assessment focused on the following domain:
+
+**Target:** networkwalks.com
+
+The activities were limited to information gathering and reconnaissance.
+
+The following areas were examined:
+
+| Assessment Area | Purpose |
+|---|---|
+| Domain registration | Identify registrar and registration-related information |
+| Name servers | Identify DNS hosting infrastructure |
+| Web technologies | Identify technologies used by the website |
+| IP resolution | Determine the IP address associated with the domain |
+| HTTP headers | Examine server responses and exposed information |
+| WAF identification | Identify the reported Web Application Firewall |
+| DNS enumeration | Examine available DNS records |
+
+## 4.2 Methodology
+
+I followed a structured reconnaissance methodology.
 4.2 Methodology
 
 I followed a structured reconnaissance methodology.
