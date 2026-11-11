@@ -684,7 +684,7 @@ Overall, this exercise strengthened my practical understanding of footprinting, 
 
 It also provided a foundation for more advanced cybersecurity activities involving network scanning, vulnerability assessment and security analysis.
 
-14. Skills Demonstrated
+# 14. Skills Demonstrated
 
 The following skills were developed or practised during this exercise:
 
@@ -721,13 +721,13 @@ Unauthorised access to computer systems is a criminal offence in many jurisdicti
 
 # **Network Scanning with Zenmap**
 
-# 1. Network Scanning and Host Discovery Using Zenmap
 
-## 1.1 Introduction
+
+## Introduction
 
 For the second practical activity, I used Zenmap to perform network discovery on my local network. The objective was to identify active devices within the network, examine their IP and MAC addresses, and generate a visual network topology.
 
-## 1.2 Network Configuration
+## Network Configuration
 
 I first used the Windows `ipconfig` command to identify my local network configuration. I then used the following subnet as the target for the Zenmap scan.
 
@@ -739,7 +739,7 @@ I first used the Windows `ipconfig` command to identify my local network configu
 | Nmap Command | `nmap -sn 192.168.56.0/24` |
 | Total Live Hosts | 3 |
 
-## 1.3 Live Host Discovery
+## Live Host Discovery
 
 After entering the subnet into Zenmap, I selected Ping Scan and initiated the scan.
 
@@ -753,13 +753,13 @@ The results identified three live hosts within the network.
 
 The scan confirmed that three hosts were active within the specified subnet. Two MAC addresses were returned in the scan output, both identified as Oracle VirtualBox virtual network interfaces.
 
-## 1.4 Zenmap Scan Evidence
+## Zenmap Scan Evidence
 
 The following screenshots show the scan configuration and discovered hosts.
 
 ![Zenmap Scan Results](./Nmap%20scan%20result%201.png)
 
-## 1.5 Network Topology
+## Network Topology
 
 After completing the scan, I opened the Topology tab in Zenmap and enabled the legend.
 
@@ -767,13 +767,13 @@ The topology displayed the discovered hosts and their relationship within the sc
 
 ![Zenmap Network Topology](./Nmap%20scan%20result%202.png)
 
-## 1.6 Security Relevance
+## Security Relevance
 
 Network scanning provides useful information for understanding the devices connected to a network.
 
 The results can help security professionals identify active hosts, maintain network visibility, document connected devices and investigate potentially unknown systems.
 
-## 1.7 Conclusion
+## Conclusion
 
 This exercise gave me practical experience using Zenmap for network discovery and host identification. I successfully scanned the 192.168.56.0/24 subnet and identified three live hosts.
 
