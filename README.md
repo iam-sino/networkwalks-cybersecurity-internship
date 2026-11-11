@@ -568,7 +568,7 @@ Based on the information collected during the reconnaissance activities, I ident
 
 **Risk Assessment Note:** These ratings represent preliminary risk considerations based on information exposure. They are not confirmed vulnerability severity ratings. No exploitation or vulnerability validation was conducted during this practical.
 
-9. Understanding the Difference Between Information Exposure and a Vulnerability
+# 9. Understanding the Difference Between Information Exposure and a Vulnerability
 
 One important lesson from this exercise was understanding that information gathering and vulnerability identification are two different activities.
 
@@ -584,7 +584,7 @@ A proper vulnerability assessment would require additional investigation, verifi
 
 This distinction is important because cybersecurity professionals must avoid reporting ordinary technical information as confirmed security vulnerabilities.
 
-10. Key Security Lessons Learned
+# 10. Key Security Lessons Learned
 
 This practical exercise helped me understand several important cybersecurity concepts.
 
@@ -620,7 +620,7 @@ I learned that not every piece of exposed technical information represents a vul
 
 I gained experience documenting commands, observations, technical findings and their potential security implications.
 
-11. Challenges and Technical Considerations
+# 11. Challenges and Technical Considerations
 
 During reconnaissance, it is important to understand that tools provide information based on the responses they receive.
 
@@ -638,7 +638,7 @@ Some important considerations include:
 
 Understanding these limitations is necessary when interpreting reconnaissance results.
 
-12. Recommendations and Defensive Considerations
+# 12. Recommendations and Defensive Considerations
 
 Based on the observations made during this exercise, the following general defensive considerations are relevant:
 
@@ -670,7 +670,7 @@ Web Application Firewall rules should be reviewed and updated regularly to ensur
 
 Organisations should perform authorised security assessments to identify weaknesses that cannot be established through reconnaissance alone.
 
-13. Conclusion
+# 13. Conclusion
 
 This practical exercise provided hands-on experience with six important reconnaissance tools available in Kali Linux.
 
@@ -701,40 +701,80 @@ The following skills were developed or practised during this exercise:
 - Technical security documentation.
 - Kali Linux command-line operations.
 
-15. Project Evidence
 
-Screenshots and terminal outputs should be included to demonstrate the activities performed and support the findings documented in this repository.
+# 15. Liability Disclaimer
+All activities documented in this report were conducted strictly for educational, research, and cybersecurity learning purposes. Testing was limited to systems and devices that I personally own or those for which I have obtained the necessary authorisation and permission.
+The tools, techniques, commands, and findings presented in this report are intended solely to demonstrate my understanding of network reconnaissance, information gathering, and security assessment. They must not be used to gain unauthorised access to systems, disrupt services, compromise data, or engage in any unlawful activity.
+I accept full responsibility for my actions and the proper use of the knowledge acquired during these exercises. Neither the instructor, the authors, nor any organisation referenced in this report shall be held responsible for the misuse of the information presented.
+Unauthorised access to computer systems is a criminal offence in many jurisdictions, even where no damage or disruption occurs. Such actions may result in legal prosecution, financial penalties, loss of employment, and other serious consequences.
 
-Recommended evidence structure:
 
-1. WHOIS command and output.
-2. WhatWeb command and output.
-3. Nslookup command and output.
-4. cURL HTTP response headers.
-5. WAFW00F command and output.
-6. DNSRecon command and output.
 
-Each screenshot should be clearly labelled and placed under its corresponding section.
 
-16. Disclaimer
 
-This project was completed as part of a cybersecurity learning and internship exercise.
 
-The activities documented here were limited to reconnaissance and information gathering. No exploitation, unauthorised access or destructive testing was performed.
 
-The findings represent observations made during the practical exercise and should not be interpreted as confirmation of exploitable vulnerabilities.
 
-All security testing should be conducted with appropriate authorisation and within an agreed scope.
+
+
+
+
 # **Network Scanning with Zenmap**
 
-For the second activity, I used Zenmap to perform network discovery on my local network. The practical required me to identify my local IP address and subnet, discover live hosts, identify their IP and MAC addresses, and generate a network topology.
-I first used the Windows "ipconfig" command to identify my local IP address and LAN subnet. I then entered the subnet into Zenmap and selected Ping Scan to identify active hosts.
-The scan was performed against the 192.168.56.0/24 subnet. The results identified three live hosts:
-- 192.168.56.100
-- 192.168.56.101
-- 192.168.56.1
-The scan also identified two MAC addresses:
-- 08:00:27:9E:D1:21
-- 08:00:27:DC:F0:92
-A total of 256 IP addresses were scanned, with 3 hosts found active. The MAC addresses identified by the scan were associated with Oracle VirtualBox virtual network interfaces.
-After completing the scan, I opened the Topology section in Zenmap to view the discovered hosts and their network relationships. The topology displayed the three discovered devices connected within the local network.
+# 1. Network Scanning and Host Discovery Using Zenmap
+
+## 1.1 Introduction
+
+For the second practical activity, I used Zenmap to perform network discovery on my local network. The objective was to identify active devices within the network, examine their IP and MAC addresses, and generate a visual network topology.
+
+## 1.2 Network Configuration
+
+I first used the Windows `ipconfig` command to identify my local network configuration. I then used the following subnet as the target for the Zenmap scan.
+
+| Network Information | Result |
+|---|---|
+| Target Subnet | 192.168.56.0/24 |
+| Scan Type | Ping Scan |
+| Scanning Tool | Zenmap |
+| Nmap Command | `nmap -sn 192.168.56.0/24` |
+| Total Live Hosts | 3 |
+
+## 1.3 Live Host Discovery
+
+After entering the subnet into Zenmap, I selected Ping Scan and initiated the scan.
+
+The results identified three live hosts within the network.
+
+| No. | IP Address | MAC Address |
+|---|---|---|
+| 1 | 192.168.56.1 | Not displayed |
+| 2 | 192.168.56.100 | 08:00:27:9E:D1:21 |
+| 3 | 192.168.56.101 | 08:00:27:DC:F0:92 |
+
+The scan confirmed that three hosts were active within the specified subnet. Two MAC addresses were returned in the scan output, both identified as Oracle VirtualBox virtual network interfaces.
+
+## 1.4 Zenmap Scan Evidence
+
+The following screenshots show the scan configuration and discovered hosts.
+
+![Zenmap Scan Results](./Nmap%20scan%20result%201.png)
+
+## 1.5 Network Topology
+
+After completing the scan, I opened the Topology tab in Zenmap and enabled the legend.
+
+The topology displayed the discovered hosts and their relationship within the scanned network.
+
+![Zenmap Network Topology](./Nmap%20scan%20result%202.png)
+
+## 1.6 Security Relevance
+
+Network scanning provides useful information for understanding the devices connected to a network.
+
+The results can help security professionals identify active hosts, maintain network visibility, document connected devices and investigate potentially unknown systems.
+
+## 1.7 Conclusion
+
+This exercise gave me practical experience using Zenmap for network discovery and host identification. I successfully scanned the 192.168.56.0/24 subnet and identified three live hosts.
+
+I also reviewed the available MAC address information and generated a network topology to visualise the discovered devices.
