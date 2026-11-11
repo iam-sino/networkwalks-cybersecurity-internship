@@ -320,12 +320,13 @@ Observations:
 
 The WhatWeb results identified the following technologies:
 
-Technology| Identified Result
-Web Server| Apache
-Content Management System| WordPress 7.1.4
-WordPress Plugin| WP Download Manager 3.3.76
-Front-end Framework| Bootstrap 7.1.4
-JavaScript Library| jQuery 3.7.1
+|Technology| Identified Result|
+|---|---|
+|Web Server| Apache|
+|Content Management System| WordPress 7.1.4|
+|WordPress Plugin| WP Download Manager 3.3.76|
+|Front-end Framework| Bootstrap 7.1.4|
+|JavaScript Library| jQuery 3.7.1|
 
 These results provided an overview of the technologies identified by the scanning tool.
 
@@ -492,13 +493,14 @@ Observations:
 
 The DNSRecon results revealed information relating to the following DNS record types:
 
-DNS Record| Purpose
-SOA| Provides administrative information about a DNS zone
-NS| Identifies authoritative name servers
-MX| Identifies mail servers responsible for receiving email
-A| Maps a domain name to an IPv4 address
-TXT| Stores text-based information associated with a domain
-SRV| Provides information about specific network services
+|DNS Record| Purpose|
+|---|---|
+|SOA| Provides administrative information about a DNS zone|
+|NS| Identifies authoritative name servers|
+|MX| Identifies mail servers responsible for receiving email|
+|A| Maps a domain name to an IPv4 address|
+|TXT| Stores text-based information associated with a domain|
+|SRV| Provides information about specific network services|
 
 The TXT records included SPF information and a Google site verification entry.
 
@@ -543,28 +545,28 @@ DNSRecon Commad:  dnsrecon -d networkwalks.com
 
 The following table summarises the major findings from the six reconnaissance activities.
 
-|Tool| Main Finding| Security Relevance|
-|---|---|
-|WHOIS| GoDaddy.com, LLC registrar and identified name servers| Provides domain registration and infrastructure information|
-|WhatWeb| Apache, WordPress 7.1.4, WP Download Manager 3.3.76, Bootstrap and jQuery| Reveals identifiable web technologies|
-|Nslookup| 192.232.216.135| Identifies the resolved IP address|
-|cURL| HTTP/2 200 and "/wp-json/" endpoint| Reveals response and application information|
-|WAFW00F| ModSecurity (SpiderLabs)| Identifies reported WAF technology|
-|DNSRecon| SOA, NS, MX, A and TXT information| Provides insight into DNS infrastructure|
-
+| Tool | Main Finding | Security Relevance |
+|---|---|---|
+| WHOIS | GoDaddy.com, LLC registrar and identified name servers | Provides domain registration and infrastructure information |
+| WhatWeb | Apache, WordPress 7.1.4, WP Download Manager 3.3.76, Bootstrap and jQuery | Reveals identifiable web technologies |
+| Nslookup | 192.232.216.135 | Identifies the resolved IP address |
+| cURL | HTTP/2 200 and `/wp-json/` endpoint | Reveals response and application information |
+| WAFW00F | ModSecurity (SpiderLabs) | Identifies reported WAF technology |
+| DNSRecon | SOA, NS, MX, A and TXT information | Provides insight into DNS infrastructure |
 
 # 8. Risk Analysis and Potential Security Impact
 
 Based on the information collected during the reconnaissance activities, I identified several potential security considerations.
 
-No.| Risk / Finding| Evidence| Potential Impact| Risk Level
-1| Web technology information exposed| WhatWeb identified Apache, WordPress and associated technologies| May help attackers identify software components requiring further security review| Medium
-2| Server IP address identifiable| Nslookup resolved the domain to 192.232.216.135| Provides information about the network location of the web service| Low
-3| HTTP technical information exposed| cURL returned HTTP response headers and exposed "/wp-json/"| May assist technology fingerprinting and further enumeration| Low
-4| WAF technology identifiable| WAFW00F identified ModSecurity (SpiderLabs)| Reveals information about the web application's security architecture| Low
-5| DNS infrastructure information exposed| DNSRecon identified DNS, mail and service-related records| May help attackers build a broader infrastructure profile| Medium
+| No. | Risk / Finding | Evidence | Potential Impact | Risk Level |
+|---|---|---|---|---|
+| 1 | Web technology information exposed | WhatWeb identified Apache, WordPress and associated technologies | May help attackers identify software components requiring further security review | Medium |
+| 2 | Server IP address identifiable | Nslookup resolved the domain to 192.232.216.135 | Provides information about the network location of the web service | Low |
+| 3 | HTTP technical information exposed | cURL returned HTTP response headers and exposed `/wp-json/` | May assist technology fingerprinting and further enumeration | Low |
+| 4 | WAF technology identifiable | WAFW00F identified ModSecurity (SpiderLabs) | Reveals information about the web application's security architecture | Low |
+| 5 | DNS infrastructure information exposed | DNSRecon identified DNS, mail and service-related records | May help attackers build a broader infrastructure profile | Medium |
 
-Risk assessment note: These ratings represent preliminary risk considerations based on information exposure. They are not confirmed vulnerability severity ratings. No exploitation or vulnerability validation was conducted during this practical.
+**Risk Assessment Note:** These ratings represent preliminary risk considerations based on information exposure. They are not confirmed vulnerability severity ratings. No exploitation or vulnerability validation was conducted during this practical.
 
 9. Understanding the Difference Between Information Exposure and a Vulnerability
 
