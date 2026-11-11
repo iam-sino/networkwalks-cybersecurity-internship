@@ -166,13 +166,8 @@ An attacker may use domain registration information to understand who manages a 
 
 A security professional can also use this information to establish an initial picture of the domain's ownership and DNS arrangements.
 
-![WHOIS Result 1](./Whois%20Result%201.png)
 
-![WHOIS Result 2](./Whois%20Result%202.png)
-
-![WHOIS Result 3](./Whois%20Result%203.png)
-
-5.2 WhatWeb
+## 5.2 WhatWeb
 
 Purpose: Website technology identification.
 
@@ -193,7 +188,9 @@ Knowing which technologies a website uses can help a security professional deter
 
 Attackers may also use technology fingerprinting to identify software associated with publicly documented vulnerabilities.
 
-5.3 Nslookup
+
+
+## 5.3 Nslookup
 
 Purpose: DNS resolution.
 
@@ -207,7 +204,8 @@ DNS resolution provides information about the network location associated with a
 
 This information can help security professionals understand how internet-facing services are identified and accessed.
 
-5.4 cURL
+
+## 5.4 cURL
 
 Purpose: HTTP communication and response inspection.
 
@@ -227,7 +225,9 @@ Why it matters in cybersecurity:
 
 Exposed HTTP headers may reveal technical information about a web application and help security professionals understand how a server responds to incoming requests.
 
-5.5 WAFW00F
+
+
+## 5.5 WAFW00F
 
 Purpose: Web Application Firewall identification.
 
@@ -241,7 +241,8 @@ Identifying a WAF can provide insight into the security architecture of a web ap
 
 However, identifying a WAF does not automatically establish how effectively it protects the application.
 
-5.6 DNSRecon
+
+## 5.6 DNSRecon
 
 Purpose: DNS enumeration.
 
@@ -481,7 +482,35 @@ From a defensive perspective, organisations should review their DNS records regu
 
 The absence of an SRV record in this scan does not establish that the organisation has no other services. Similarly, receiving no answer to a DNSSEC query is not sufficient by itself to conclude that DNSSEC is disabled.
 
-Evidence: Insert DNSRecon command and result screenshot here.
+
+$ whois networkwalks.com
+
+![WHOIS Result 1](./Whois%20Result%201.png)
+
+![WHOIS Result 2](./Whois%20Result%202.png)
+
+![WHOIS Result 3](./Whois%20Result%203.png)
+
+$ whatweb networkwalks.com
+
+![WhatWeb Results](./whatweb%20Result.png)
+
+$ nslookup networkwalks.com
+
+![Nslookup Results](./nslookup%20Result.png)
+
+$ curl -I https://networkwalks.com
+
+![cURL Results](./curl%20Result.png)
+
+$ wafw00f networkwalks.com
+
+![WAFW00F Results](./wafw00F%20Result.png)
+
+$ dnsrecon -d networkwalks.com
+
+![DNSRecon Results](./dnsrecon%20Result.png)
+
 
 7. Consolidated Findings
 
